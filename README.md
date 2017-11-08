@@ -5,15 +5,39 @@ The base configuration for [Sass Lint](https://github.com/sasstools/sass-lint), 
 
 ## Installation
 
-Install dependencies:
+Install sass-lint globally:
 
 ```
-npm install --save-dev babel-eslint eslint eslint-config-airbnb-base eslint-plugin-import pod-point/eslint-config-podpoint-base
+npm install -g sass-lint
 ```
+
+Install sass-lint as a dev dependency:
+
+```
+npm install --save-dev sass-lint
+```
+
+Install this package to use the config:
+
+```
+npm install --save-dev pod-point/sass-lint-config-podpoint-base
+```
+
+## Usage
 
 Create a `.sass-lint.yml` file with the following contents:
 
 ```yml
 options:
   config-file: "./node_modules/@pod-point/sass-lint-config-podpoint-base/.sass-lint.yml"
+```
+
+Note that rules can be added or overridden by creating in the following way:
+
+```yml
+options:
+  config-file: "./node_modules/@pod-point/sass-lint-config-podpoint-base/.sass-lint.yml"
+rules:
+  indentation:
+    - 4
 ```
