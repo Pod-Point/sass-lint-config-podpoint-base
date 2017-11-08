@@ -1,0 +1,17 @@
+{
+  "name": "@pod-point/sass-lint-config-podpoint-base",
+  "version": "1.0.0",
+  "description": "Global Sass lint config",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pod-Point/sass-lint-config-podpoint-base.git"
+  },
+  "author": "POD Point Software Team <software@pod-point.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "ISC"
+}
